@@ -8,3 +8,13 @@
 .movie-img{
     height: 200px;
 }
+.active{
+    @apply text-pink-500 relative
+}
+.active::after{
+    @apply absolute bottom-[-3px] right-0 left-0 w-full bg-pink-500 h-[3px] 
+}
+.active::after{
+    content: '';
+    
+}

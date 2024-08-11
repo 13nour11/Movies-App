@@ -12,6 +12,7 @@ import Register from './Components/Register/Register'
 import MoviesContextProvider from './Context/MoviesContext'
 import MovieDetails from './Components/MovieDetails/MovieDetails'
 import {Toaster} from 'react-hot-toast'
+import LatestTrailersPopular from './Components/LatestTrailersPopular/LatestTrailersPopular'
 
 let routing = createBrowserRouter([
   {path:"", element: <Layout/> , children:[
@@ -19,6 +20,8 @@ let routing = createBrowserRouter([
     {path:'movies', element:<Movies/>},
     {path:'movieDetails/:id' , element:<MovieDetails/>},
     {path:"watchlist" , element: <WatchList/>},
+    {path:"latest" , element: <LatestTrailersPopular/>},
+    {path:"register" , element: <Register/>},
     {path:"login",element:<Login/>},
     {path:"register",element:<Register/>}
 
